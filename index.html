@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alessio Atzeni</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/bulma.css">
+</head>
+<body>
+	<!-- Begin Index Header -->
+	<section class="hero is-dark is-large">
+		<div class="hero-head">
+		<header class="nav">
+			<div class="container">
+				<div class="nav-left">
+					<a class="nav-item" href="index.html">
+						<b>Alessio Atzeni &nbsp; </b>|&nbsp; Hybrid Designer
+					</a>
+				</div>
+				<div class="nav-right nav-menu">
+					<a class="nav-item is-active is-tab">
+					Home
+					</a>
+					<a class="nav-item is-tab" href="about.html">
+					About
+					</a>
+					<a class="nav-item is-tab" href="catalog.html">
+					Catalog <span class="tag is-small">Beta</span>
+					</a>
+					<a class="nav-item is-tab" href="contacts.html">
+					Contacts
+					</a>
+					<a class="nav-item is-tab" onclick="openLoginModal()">
+					Login
+					</a>
+				</div>
+			</div>
+		</header>
+		</div>
+
+		<div class="hero-body">
+			<div class="container has-text-centered">
+				<h1 class="title">
+					Alessio Atzeni
+				</h1>
+				<h2 class="subtitle">
+					Hybrid Designer
+				</h2>
+			</div>
+		</div>
+
+		<div class="hero-foot">
+			<nav class="tabs is-boxed">
+				<div class="container">
+					<ul>
+						<li onclick="featuredClick()" id="featured" class="is-active"><a>Featured</a></li>
+						<li onclick="topDownloadsClick()" id="topDownloads"><a>Top Downloads</a></li>
+						<li onclick="popularClick()" id="popular"><a>Popular Themes</a></li>
+						<li onclick="topRatedClick()" id="topRated"><a>Top Rated</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</section>
+	<!-- End Header -->
+	<br>
+	<!-- Begin Body -->
+		<div class="columns has-text-centered">
+			<div class="column is-one-quarter">
+				<figure class="image is-300x220">
+					<a href="prodDetail.html"><img src="./assets/themeexam.jpg" alt="" /></a>
+				</figure>
+			</div>
+			<div class="column is-one-quarter">
+				<figure class="image is-300x220">
+					<a href="#"><img src="http://placehold.it/320x240" alt="" /></a>
+				</figure>
+			</div>
+			<div class="column is-one-quarter">
+				<figure class="image is-300x220">
+					<a href="#"><img src="http://placehold.it/320x240" alt="" /></a>
+				</figure>
+			</div>
+			<div class="column is-one-quarter">
+				<figure class="image is-300x220">
+					<a href="#"><img src="http://placehold.it/320x240" alt="" /></a>
+				</figure>
+			</div>
+		</div>
+		<div class="columns has-text-centered">
+			<div class="column is-one-quarter">
+				<figure class="image is-300x220">
+					<a href="#"><img src="http://placehold.it/320x240" alt="" /></a>
+				</figure>
+			</div>
+			<div class="column is-one-quarter">
+				<figure class="image is-300x220">
+					<a href="#"><img src="http://placehold.it/320x240" alt="" /></a>
+				</figure>
+			</div>
+			<div class="column is-one-quarter">
+				<figure class="image is-300x220">
+					<a href="#"><img src="http://placehold.it/320x240" alt="" /></a>
+				</figure>
+			</div>
+			<div class="column is-one-quarter">
+				<figure class="image is-300x220">
+					<a href="#"><img src="http://placehold.it/320x240" alt="" /></a>
+				</figure>
+			</div>
+		</div>
+		<div class="columns has-text-centered">
+			<div class="column is-one-quarter">
+				<figure class="image is-300x220">
+					<a href="#"><img src="http://placehold.it/320x240" alt="" /></a>
+				</figure>
+			</div>
+			<div class="column is-one-quarter">
+				<figure class="image is-300x220">
+					<a href="#"><img src="http://placehold.it/320x240" alt="" /></a>
+				</figure>
+			</div>
+			<div class="column is-one-quarter">
+				<figure class="image is-300x220">
+					<a href="#"><img src="http://placehold.it/320x240" alt="" /></a>
+				</figure>
+			</div>
+			<div class="column is-one-quarter">
+				<figure class="image is-300x220">
+					<a href="#"><img src="http://placehold.it/320x240" alt="" /></a>
+				</figure>
+			</div>
+		</div>
+
+	<!-- End Body -->
+
+	<!-- Begin Universal Footer -->
+		<footer class="footer">
+  			<div class="container">
+   				<div class="content has-text-centered">
+      				<p>
+        				<strong>Alessio Atzeni.</strong> Revisited by <a href="#">Anonymous</a>. The website content
+        				is licensed under <a href="http://nearkevin.cu.cc/licenses" target="_blank">NK LCS 1.0</a>.
+      				</p>
+      				<p>
+       					<a class="icon" href="https://github.com/kpratama24" target="_blank">
+          				<i class="fa fa-github"></i>
+        				</a>
+      				</p>
+    			</div>
+  			</div>
+		</footer>
+	<!-- End Universal Footer -->
+	<!-- Begin Universal Login Modal -->
+		<div id="modal" class="modal">
+			<div class="modal-background"></div>
+			<div class="modal-card">
+				<header class="modal-card-head">
+					<p class="modal-card-title"> Member Login</p>
+					<button class="delete" onclick="closeLoginModal()"></button>
+				</header>
+				<section class="modal-card-body">
+					<form>
+							<p class="control">
+								<input class="input" type="text" placeholder="Username">
+							</p>
+							<p class="control">
+								<input class="input" type="password" placeholder="Password">
+							</p>
+					</form>
+				</section>
+				<footer class="modal-card-foot">
+					<a onclick="isLoading()" id="loginButton" class="button is-dark" href="login.html">Login</a>
+				</footer>
+			</div>
+		</div>
+	<!-- End Universal Login Modal -->
+</body>
+<script type="text/javascript">
+	function openLoginModal(){
+		document.getElementById('modal').className += " is-active";
+	}
+
+	function closeLoginModal() {
+		document.getElementById('modal').className = "modal";
+	}
+
+	function featuredClick() {
+		document.getElementById('featured').className = "is-active";
+		document.getElementById('topDownloads').className = "";
+		document.getElementById('popular').className = "";
+		document.getElementById('topRated').className = "";
+	}
+
+	function topDownloadsClick() {
+		document.getElementById('featured').className = "";
+		document.getElementById('topDownloads').className = "is-active";
+		document.getElementById('popular').className = "";
+		document.getElementById('topRated').className = "";
+	}
+
+	function popularClick() {
+		document.getElementById('featured').className = "";
+		document.getElementById('topDownloads').className = "";
+		document.getElementById('popular').className = "is-active";
+		document.getElementById('topRated').className = "";
+	}
+
+	function topRatedClick() {
+		document.getElementById('featured').className = "";
+		document.getElementById('topDownloads').className = "";
+		document.getElementById('popular').className = "";
+		document.getElementById('topRated').className = "is-active";
+	}
+
+	function isLoading(){
+		document.getElementById('loginButton').className += " is-loading";
+	}
+</script>
+</html>
