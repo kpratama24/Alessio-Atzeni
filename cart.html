@@ -36,7 +36,7 @@
   					<a class="nav-item is-tab" href="contacts.html">
   					Contacts
   					</a>
-  					<a class="nav-item is-tab">
+  					<a class="nav-item is-tab" href="index.html">
   					Logout
   					</a>
   				</div>
@@ -47,7 +47,7 @@
   		<div class="hero-body">
   			<div class="container">
   				<h1 class="title">
-  				 Cart
+  				 Cart <span class="tag is-primary is-small">Secured Page</span>
   				</h1>
   			</div>
   		</div>
@@ -58,6 +58,44 @@
     <!-- Begin Body -->
     <div class="container is-fluid has-text-centered">
       <h1 class="title is-2"><span class="icon is-medium"><i class="fa fa-shopping-cart"></i></span> Your Items</h1>
+      <hr>
+    </div>
+    <div class="container is-fluid">
+      <div class="columns">
+        <div class="column is-half is-offset-one-quarter">
+      <table class="table is-narrow has-text-centered">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Price (in USD)</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <th>Subtotal</th>
+            <th></th>
+            <th>16.98</th>
+          </tr>
+        </tfoot>
+        <tbody>
+          <tr>
+            <td>Nature</td>
+            <td>Themes</td>
+            <td>14.99</td>
+          </tr>
+          <tr>
+            <td>Alessio Fee</td>
+            <td>-</td>
+            <td>1.99</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="container has-text-centered">
+        <button onclick="document.getElementById(&quot;checkoutButton&quot;).className += &quot; is-loading&quot;" id="checkoutButton" class="button is-dark">Checkout</button>
+      </div>
+    </div>
+  </div>
     </div>
     <!-- End Body -->
 
