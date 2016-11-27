@@ -52,10 +52,8 @@
 			<nav class="tabs is-boxed">
 				<div class="container">
 					<ul>
-						<li onclick="featuredClick()" id="featured" class="is-active"><a>Featured</a></li>
-						<li onclick="topDownloadsClick()" id="topDownloads"><a>Top Downloads</a></li>
-						<li onclick="popularClick()" id="popular"><a>Popular Themes</a></li>
-						<li onclick="topRatedClick()" id="topRated"><a>Top Rated</a></li>
+						<li onclick="mostUpvotedClick()" id="upvoted" class="is-active"><a>Most Upvoted</a></li>
+						<li onclick="mostLikedClick()" id="liked"><a>Most Liked</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -66,68 +64,16 @@
 	<!-- Begin Body -->
 		<div class="columns has-text-centered">
 			<div class="column is-one-quarter">
-				<figure class="image is-300x220">
-					<a href="prodDetail.html"><img src="./assets/themeexam.jpg" alt="" /></a>
-				</figure>
+
 			</div>
 			<div class="column is-one-quarter">
-				<figure class="image is-300x220">
-					<a href="#"><img src="http://placehold.it/320x240" alt="" /></a>
-				</figure>
+
 			</div>
 			<div class="column is-one-quarter">
-				<figure class="image is-300x220">
-					<a href="#"><img src="http://placehold.it/320x240" alt="" /></a>
-				</figure>
+
 			</div>
 			<div class="column is-one-quarter">
-				<figure class="image is-300x220">
-					<a href="#"><img src="http://placehold.it/320x240" alt="" /></a>
-				</figure>
-			</div>
-		</div>
-		<div class="columns has-text-centered">
-			<div class="column is-one-quarter">
-				<figure class="image is-300x220">
-					<a href="#"><img src="http://placehold.it/320x240" alt="" /></a>
-				</figure>
-			</div>
-			<div class="column is-one-quarter">
-				<figure class="image is-300x220">
-					<a href="#"><img src="http://placehold.it/320x240" alt="" /></a>
-				</figure>
-			</div>
-			<div class="column is-one-quarter">
-				<figure class="image is-300x220">
-					<a href="#"><img src="http://placehold.it/320x240" alt="" /></a>
-				</figure>
-			</div>
-			<div class="column is-one-quarter">
-				<figure class="image is-300x220">
-					<a href="#"><img src="http://placehold.it/320x240" alt="" /></a>
-				</figure>
-			</div>
-		</div>
-		<div class="columns has-text-centered">
-			<div class="column is-one-quarter">
-				<figure class="image is-300x220">
-					<a href="#"><img src="http://placehold.it/320x240" alt="" /></a>
-				</figure>
-			</div>
-			<div class="column is-one-quarter">
-				<figure class="image is-300x220">
-					<a href="#"><img src="http://placehold.it/320x240" alt="" /></a>
-				</figure>
-			</div>
-			<div class="column is-one-quarter">
-				<figure class="image is-300x220">
-					<a href="#"><img src="http://placehold.it/320x240" alt="" /></a>
-				</figure>
-			</div>
-			<div class="column is-one-quarter">
-				<figure class="image is-300x220">
-					<a href="#"><img src="http://placehold.it/320x240" alt="" /></a>
-				</figure>
+				
 			</div>
 		</div>
 
@@ -184,32 +130,14 @@
 		document.getElementById('modal').className = "modal";
 	}
 
-	function featuredClick() {
-		document.getElementById('featured').className = "is-active";
-		document.getElementById('topDownloads').className = "";
-		document.getElementById('popular').className = "";
-		document.getElementById('topRated').className = "";
+	function mostUpvotedClick() {
+		document.getElementById('upvoted').className = "is-active";
+		document.getElementById('liked').className = "";
 	}
 
-	function topDownloadsClick() {
-		document.getElementById('featured').className = "";
-		document.getElementById('topDownloads').className = "is-active";
-		document.getElementById('popular').className = "";
-		document.getElementById('topRated').className = "";
-	}
-
-	function popularClick() {
-		document.getElementById('featured').className = "";
-		document.getElementById('topDownloads').className = "";
-		document.getElementById('popular').className = "is-active";
-		document.getElementById('topRated').className = "";
-	}
-
-	function topRatedClick() {
-		document.getElementById('featured').className = "";
-		document.getElementById('topDownloads').className = "";
-		document.getElementById('popular').className = "";
-		document.getElementById('topRated').className = "is-active";
+	function mostLikedClick() {
+		document.getElementById('upvoted').className = "";
+		document.getElementById('liked').className = "is-active";
 	}
 
 	function isLoading(){
