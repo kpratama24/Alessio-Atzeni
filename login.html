@@ -62,7 +62,15 @@
 	          </p>
 	          <ul class="menu-list">
 	            <li><a href="#">Dashboard</a></li>
-	          <li><a class="is-active" href="#">Customers Feedback</a></li>
+	          <li onclick="feedbackClick()"><a id="feedbackMenu" class="is-active" href="#">Customers Feedback</a></li>
+						<script type="text/javascript">
+							function feedbackClick(){
+								document.getElementById("feedbackMenu").className="is-active";
+								document.getElementById("paymentMenu").className="";
+								document.getElementById("feedbackDiv").style.display="block";
+								document.getElementById("paymentDiv").style.display="none";
+						}
+						</script>
 	          </ul>
 	          <p class="menu-label">
 	            Administration
@@ -74,7 +82,15 @@
 	            Transactions
 	          </p>
 	          <ul class="menu-list">
-	            <li><a href="#">Payments</a></li>
+	            <li onclick="paymentClick()"><a id="paymentMenu" href="#">Payments</a></li>
+							<script type="text/javascript">
+								function paymentClick(){
+									document.getElementById("feedbackMenu").className="";
+									document.getElementById("paymentMenu").className="is-active";
+									document.getElementById("feedbackDiv").style.display="none";
+									document.getElementById("paymentDiv").style.display="block";
+								}
+							</script>
 	            <li><a href="#">Transfers</a></li>
 	            <li><a href="#">Balance</a></li>
 	          </ul>
@@ -82,7 +98,7 @@
 	      </div>
 	    </div>
 
-	    <div class="column">
+	    <div id="feedbackDiv" class="column">
 	      <div class="container is-fluid">
 	        <article class="media">
 	          <figure class="media-left">
@@ -214,6 +230,21 @@
 	        </article>
 	      </div>
 	    </div>
+
+			<div id="paymentDiv" class="column" style="display:none">
+				<h1 class="subtitle is-3"> Select your default payment method </h1>
+				Current preferred payment method :
+				<br>
+				<span class="icon is-large"><i class="fa fa-cc-visa"></i></span>;
+				<br><br>
+				Change to :
+				<select>
+					<option value="Visa"> Mastercard </option>
+					<option value="Visa"> Paypal </option>
+				</select>
+				<br><br>
+				<button class="button is-primary is-small"> Apply </button>
+			</div>
 	  </div>
 	</div>
   <!-- End Body -->
