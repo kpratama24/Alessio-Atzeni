@@ -48,37 +48,453 @@
 	<!-- End Header -->
 	<br>
 	<!-- Begin Body -->
-	<div class="columns has-text-centered">
-		<div class="column is-one-third">
-				<div class="card">
-					<div class="card-image">
-						<figure class="image is-4by3">
-							<img src="http://placehold.it/300x225" alt="">
-						</figure>
-					</div>
-					<div class="card-content">
-						<div class="content">
-							Lorem Ipsum, A modern Wordpress Themes
+	<section class="showcase">
+		<div class="tabs is-centered">
+			<ul>
+				<li onclick="wordpress()" id="wordpressli" class="is-active">
+					<script type="text/javascript">
+						function wordpress() {
+							document.getElementById("wordpressli").className="is-active";
+							document.getElementById("allinoneli").className="";
+							document.getElementById("communityli").className="";
+						}
+					</script>
+					<a>
+						<span class="icon is-small"><i class="fa fa-wordpress"></i></span>
+						<span> Wordpress </span>
+					</a>
+				</li>
+				<li onclick="allinone()" id="allinoneli">
+					<script type="text/javascript">
+						function allinone() {
+							document.getElementById("wordpressli").className="";
+							document.getElementById("allinoneli").className="is-active";
+							document.getElementById("communityli").className="";
+						}
+					</script>
+					<a>
+						<span class="icon is-small"><i class="fa fa-globe"></i></span>
+						<span> All-in-one </span>
+					</a>
+				</li>
+				<li onclick="community()" id="communityli">
+					<script type="text/javascript">
+						function community() {
+							document.getElementById("wordpressli").className="";
+							document.getElementById("allinoneli").className="";
+							document.getElementById("communityli").className="is-active";
+						}
+					</script>
+					<a>
+						<span class="icon is-small"><i class="fa fa-users"></i></span>
+						<span> Community </span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="container is-fluid">
+			<nav class="pagination">
+  			<a class="button">Previous</a>
+  			<a class="button">Next page</a>
+  			<ul>
+    			<li>
+      		<a class="button is-primary">1</a>
+    			</li>
+    			<li>
+      			<span>...</span>
+    			</li>
+    			<li>
+      		<a class="button">45</a>
+    			</li>
+    			<li>
+      			<a class="button">46</a>
+    			</li>
+    			<li>
+      			<a class="button">47</a>
+    			</li>
+    			<li>
+      			<span>...</span>
+    			</li>
+    			<li>
+      		<a class="button">86</a>
+    			</li>
+  			</ul>
+			</nav>
+			<br>
+			<div class="columns has-text-centered">
+				<div class="column is-one-quarter">
+					<div class="card">
+						<div class="card-image">
+							<figure class="image is-320x240">
+								<img src="./assets/themeexam.jpg">
+							</figure>
+						</div>
+						<div class="card-content">
+							<div class="media">
+								<div class="media-content">
+									<p class="title-is-5 has-text-centered">Nature</p>
+								</div>
+							</div>
+							<div class="content">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Phasellus nec iaculis mauris.
+							</div>
+							<a href="./prodDetail.html"><button	class="button is-success">View</button></a>
 						</div>
 					</div>
 				</div>
+				<div class="column is-one-quarter">
+					<div class="card">
+						<div class="card-image">
+							<figure class="image is-320x240">
+								<img src="./assets/themeexam2.jpg">
+							</figure>
+						</div>
+						<div class="card-content">
+							<div class="media">
+								<div class="media-content">
+									<p class="title-is-5 has-text-centered">Nature</p>
+								</div>
+							</div>
+							<div class="content">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Phasellus nec iaculis mauris.
+							</div>
+							<a href="./prodDetail.html"><button	class="button is-success">View</button></a>
+						</div>
+					</div>
+				</div>
+				<div class="column is-one-quarter">
+					<div class="card">
+						<div class="card-image">
+							<figure class="image is-320x240">
+								<img src="./assets/themeexam3.jpg">
+							</figure>
+						</div>
+						<div class="card-content">
+							<div class="media">
+								<div class="media-content">
+									<p class="title-is-5 has-text-centered">Nature</p>
+								</div>
+							</div>
+							<div class="content">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Phasellus nec iaculis mauris.
+							</div>
+							<a href="./prodDetail.html"><button	class="button is-success">View</button></a>
+						</div>
+					</div>
+				</div>
+				<div class="column is-one-quarter">
+					<div class="card">
+						<div class="card-image">
+							<figure class="image is-320x240">
+								<img src="./assets/themeexam4.jpg">
+							</figure>
+						</div>
+						<div class="card-content">
+							<div class="media">
+								<div class="media-content">
+									<p class="title-is-5 has-text-centered">Nature</p>
+								</div>
+							</div>
+							<div class="content">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Phasellus nec iaculis mauris.
+							</div>
+							<a href="./prodDetail.html"><button	class="button is-success">View</button></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="columns has-text-centered">
+				<div class="column is-one-quarter">
+					<div class="card">
+						<div class="card-image">
+							<figure class="image is-320x240">
+								<img src="./assets/themeexam2.jpg">
+							</figure>
+						</div>
+						<div class="card-content">
+							<div class="media">
+								<div class="media-content">
+									<p class="title-is-5 has-text-centered">Nature</p>
+								</div>
+							</div>
+							<div class="content">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Phasellus nec iaculis mauris.
+							</div>
+							<a href="./prodDetail.html"><button	class="button is-success">View</button></a>
+						</div>
+					</div>
+				</div>
+				<div class="column is-one-quarter">
+					<div class="card">
+						<div class="card-image">
+							<figure class="image is-320x240">
+								<img src="./assets/themeexam4.jpg">
+							</figure>
+						</div>
+						<div class="card-content">
+							<div class="media">
+								<div class="media-content">
+									<p class="title-is-5 has-text-centered">Nature</p>
+								</div>
+							</div>
+							<div class="content">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Phasellus nec iaculis mauris.
+							</div>
+							<a href="./prodDetail.html"><button	class="button is-success">View</button></a>
+						</div>
+					</div>
+				</div>
+				<div class="column is-one-quarter">
+					<div class="card">
+						<div class="card-image">
+							<figure class="image is-320x240">
+								<img src="./assets/themeexam3.jpg">
+							</figure>
+						</div>
+						<div class="card-content">
+							<div class="media">
+								<div class="media-content">
+									<p class="title-is-5 has-text-centered">Nature</p>
+								</div>
+							</div>
+							<div class="content">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Phasellus nec iaculis mauris.
+							</div>
+							<a href="./prodDetail.html"><button	class="button is-success">View</button></a>
+						</div>
+					</div>
+				</div>
+				<div class="column is-one-quarter">
+					<div class="card">
+						<div class="card-image">
+							<figure class="image is-320x240">
+								<img src="./assets/themeexam2.jpg">
+							</figure>
+						</div>
+						<div class="card-content">
+							<div class="media">
+								<div class="media-content">
+									<p class="title-is-5 has-text-centered">Nature</p>
+								</div>
+							</div>
+							<div class="content">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Phasellus nec iaculis mauris.
+							</div>
+							<a href="./prodDetail.html"><button	class="button is-success">View</button></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="columns has-text-centered">
+				<div class="column is-one-quarter">
+					<div class="card">
+						<div class="card-image">
+							<figure class="image is-320x240">
+								<img src="./assets/themeexam2.jpg">
+							</figure>
+						</div>
+						<div class="card-content">
+							<div class="media">
+								<div class="media-content">
+									<p class="title-is-5 has-text-centered">Nature</p>
+								</div>
+							</div>
+							<div class="content">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Phasellus nec iaculis mauris.
+							</div>
+							<a href="./prodDetail.html"><button	class="button is-success">View</button></a>
+						</div>
+					</div>
+				</div>
+				<div class="column is-one-quarter">
+					<div class="card">
+						<div class="card-image">
+							<figure class="image is-320x240">
+								<img src="./assets/themeexam4.jpg">
+							</figure>
+						</div>
+						<div class="card-content">
+							<div class="media">
+								<div class="media-content">
+									<p class="title-is-5 has-text-centered">Nature</p>
+								</div>
+							</div>
+							<div class="content">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Phasellus nec iaculis mauris.
+							</div>
+							<a href="./prodDetail.html"><button	class="button is-success">View</button></a>
+						</div>
+					</div>
+				</div>
+				<div class="column is-one-quarter">
+					<div class="card">
+						<div class="card-image">
+							<figure class="image is-320x240">
+								<img src="./assets/themeexam.jpg">
+							</figure>
+						</div>
+						<div class="card-content">
+							<div class="media">
+								<div class="media-content">
+									<p class="title-is-5 has-text-centered">Nature</p>
+								</div>
+							</div>
+							<div class="content">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Phasellus nec iaculis mauris.
+							</div>
+							<a href="./prodDetail.html"><button	class="button is-success">View</button></a>
+						</div>
+					</div>
+				</div>
+				<div class="column is-one-quarter">
+					<div class="card">
+						<div class="card-image">
+							<figure class="image is-320x240">
+								<img src="./assets/themeexam3.jpg">
+							</figure>
+						</div>
+						<div class="card-content">
+							<div class="media">
+								<div class="media-content">
+									<p class="title-is-5 has-text-centered">Nature</p>
+								</div>
+							</div>
+							<div class="content">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Phasellus nec iaculis mauris.
+							</div>
+							<a href="./prodDetail.html"><button	class="button is-success">View</button></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="columns has-text-centered">
+				<div class="column is-one-quarter">
+					<div class="card">
+						<div class="card-image">
+							<figure class="image is-320x240">
+								<img src="./assets/themeexam4.jpg">
+							</figure>
+						</div>
+						<div class="card-content">
+							<div class="media">
+								<div class="media-content">
+									<p class="title-is-5 has-text-centered">Nature</p>
+								</div>
+							</div>
+							<div class="content">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Phasellus nec iaculis mauris.
+							</div>
+							<a href="./prodDetail.html"><button	class="button is-success">View</button></a>
+						</div>
+					</div>
+				</div>
+				<div class="column is-one-quarter">
+					<div class="card">
+						<div class="card-image">
+							<figure class="image is-320x240">
+								<img src="./assets/themeexam2.jpg">
+							</figure>
+						</div>
+						<div class="card-content">
+							<div class="media">
+								<div class="media-content">
+									<p class="title-is-5 has-text-centered">Nature</p>
+								</div>
+							</div>
+							<div class="content">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Phasellus nec iaculis mauris.
+							</div>
+							<a href="./prodDetail.html"><button	class="button is-success">View</button></a>
+						</div>
+					</div>
+				</div>
+				<div class="column is-one-quarter">
+					<div class="card">
+						<div class="card-image">
+							<figure class="image is-320x240">
+								<img src="./assets/themeexam.jpg">
+							</figure>
+						</div>
+						<div class="card-content">
+							<div class="media">
+								<div class="media-content">
+									<p class="title-is-5 has-text-centered">Nature</p>
+								</div>
+							</div>
+							<div class="content">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Phasellus nec iaculis mauris.
+							</div>
+							<a href="./prodDetail.html"><button	class="button is-success">View</button></a>
+						</div>
+					</div>
+				</div>
+				<div class="column is-one-quarter">
+					<div class="card">
+						<div class="card-image">
+							<figure class="image is-320x240">
+								<img src="./assets/themeexam.jpg">
+							</figure>
+						</div>
+						<div class="card-content">
+							<div class="media">
+								<div class="media-content">
+									<p class="title-is-5 has-text-centered">Nature</p>
+								</div>
+							</div>
+							<div class="content">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Phasellus nec iaculis mauris.
+							</div>
+							<a href="./prodDetail.html"><button	class="button is-success">View</button></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav class="pagination">
+  			<a class="button">Previous</a>
+  			<a class="button">Next page</a>
+  			<ul>
+    			<li>
+      		<a class="button is-primary">1</a>
+    			</li>
+    			<li>
+      			<span>...</span>
+    			</li>
+    			<li>
+      		<a class="button">45</a>
+    			</li>
+    			<li>
+      			<a class="button">46</a>
+    			</li>
+    			<li>
+      			<a class="button">47</a>
+    			</li>
+    			<li>
+      			<span>...</span>
+    			</li>
+    			<li>
+      		<a class="button">86</a>
+    			</li>
+  			</ul>
+			</nav>
 		</div>
-		<div class="column">
-			<nav class="level is-fullwidth">
-				<div class="level-item has-text-centered">
-					<p class="heading"> Downloads </p>
-					<p class="title"> 200K </p>
-				</div>
-				<div class="level-item has-text-centered">
-					<p class="heading"> Satisfaction </p>
-					<p class="title"> 87% </p>
-				</div>
-				<div class="level-item has-text-centered">
-					<p class="heading">  </p>
-					<p class="title"> 200K </p>
-				</div>
-		</div>
-	</div>
+	</section>
 	<!-- End Body -->
 
 	<!-- Begin Universal Footer -->
