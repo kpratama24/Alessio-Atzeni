@@ -61,14 +61,26 @@
 	            General
 	          </p>
 	          <ul class="menu-list">
-	            <li><a href="#">Dashboard</a></li>
-	          <li onclick="feedbackClick()"><a id="feedbackMenu" class="is-active" href="#">Customers Feedback</a></li>
+	            <li onclick="dashboardClick()"><a class="is-active" id="dashboardMenu" href="#">Dashboard</a></li>
+							<script type="text/javascript">
+								function dashboardClick(){
+									document.getElementById("feedbackMenu").className="";
+									document.getElementById("paymentMenu").className="";
+									document.getElementById("dashboardMenu").className="is-active";
+									document.getElementById("feedbackDiv").style.display="none";
+									document.getElementById("paymentDiv").style.display="none";
+									document.getElementById("dashboardDiv").style.display="block";
+							}
+							</script>
+	          <li onclick="feedbackClick()"><a id="feedbackMenu" class="" href="#">Customers Feedback</a></li>
 						<script type="text/javascript">
 							function feedbackClick(){
 								document.getElementById("feedbackMenu").className="is-active";
 								document.getElementById("paymentMenu").className="";
+								document.getElementById("dashboardMenu").className="";
 								document.getElementById("feedbackDiv").style.display="block";
 								document.getElementById("paymentDiv").style.display="none";
+								document.getElementById("dashboardDiv").style.display="none";
 						}
 						</script>
 	          </ul>
@@ -76,7 +88,7 @@
 	            Administration
 	          </p>
 	          <ul class="menu-list">
-	            <li><a href="#">Themes Settings</a></li>
+	            <li class="is-disabled"><a href="#">Themes Settings <span class="tag is-warning">Disabled</span></a></li>
 	          </ul>
 	          <p class="menu-label">
 	            Transactions
@@ -87,18 +99,20 @@
 								function paymentClick(){
 									document.getElementById("feedbackMenu").className="";
 									document.getElementById("paymentMenu").className="is-active";
+									document.getElementById("dashboardMenu").className="";
 									document.getElementById("feedbackDiv").style.display="none";
 									document.getElementById("paymentDiv").style.display="block";
+									document.getElementById("dashboardDiv").style.display="none";
 								}
 							</script>
-	            <li><a href="#">Transfers</a></li>
-	            <li><a href="#">Balance</a></li>
+	            <li class="is-disabled"><a href="#">Transfers <span class="tag is-warning">Disabled</span></a></li>
+	            <li class="is-disabled"><a href="#">Balance <span class="tag is-warning">Disabled</span></a></li>
 	          </ul>
 	        </aside>
 	      </div>
 	    </div>
 
-	    <div id="feedbackDiv" class="column">
+	    <div id="feedbackDiv" class="column" style="display:none">
 	      <div class="container is-fluid">
 	        <article class="media">
 	          <figure class="media-left">
@@ -235,6 +249,7 @@
 				<h1 class="subtitle is-3">Payment method </h1>
 				<hr>
 				Current preferred payment method :
+				<br>
 				<span class="icon is-large"><i class="fa fa-cc-visa"></i></span>;
 				<br><br>
 				Change to :
@@ -243,10 +258,36 @@
 					<option value="Visa"> Paypal </option>
 				</select>
 				<br><br>
-				<button class="button is-primary is-small"> Apply </button>
+				<button class="button is-primary"> Apply </button>
+			</div>
+
+			<div id="dashboardDiv" class="column">
+				<h1 class="title is-2 has-text-centered">Kevin Pratama </h1>
+				<hr>
+				<nav class="level">
+  				<div class="level-item has-text-centered">
+    				<p class="heading">User Role</p>
+    				<p class="title">Administrator</p>
+  				</div>
+  				<div class="level-item has-text-centered">
+    				<p class="heading">Balances</p>
+    				<p class="title">$47.99</p>
+  				</div>
+  				<div class="level-item has-text-centered">
+    				<p class="heading">Theme Purchased</p>
+    				<p class="title">4.6k</p>
+  				</div>
+					<div class="level-item has-text-centered">
+    				<p class="heading">Theme Satisfaction Rate</p>
+    				<p class="title">92%</p>
+  				</div>
+				</nav>
+				<br>
+				<div class="has-text-centered">
+				<button class="button is-primary">Edit Profile</button>
+			</div>
 			</div>
 	  </div>
-	</div>
   <!-- End Body -->
 <!-- Begin Universal Footer -->
   <footer class="footer">
